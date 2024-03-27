@@ -1,10 +1,14 @@
 # Instructions
 
+## Libraries
 An external library is used in this assignment, so it's required to install it using pip beforehand.
 
 **Option 1**: pip install -r requirements.txt
 
 **Option 2**: python -m pip install -U prettytable
+
+## Entry Point
+App.py
 
 ## Design Patterns
 * Object-oriented programming (OOP)
