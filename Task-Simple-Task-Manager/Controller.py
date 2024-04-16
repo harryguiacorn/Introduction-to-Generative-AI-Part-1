@@ -1,8 +1,10 @@
 from Model import Model_task
-from View import display_tasks, display_message, get_user_input
+from View import display_tasks, display_message, display_report, get_user_input
 import time
+import copy
 
 task_list = []
+task_list_deleted = []
 
 
 def add_task():
@@ -41,6 +43,8 @@ def remove_task():
         if task_number >= len(task_list):
             display_message("Please enter a valid task number.")
             continue
+        task_list_deepcopy = copy.deepcopy(task_list)
+        task_list_deleted.append(task_list_deepcopy[task_number])
         del task_list[task_number]
         display_tasks(task_list)
         break
@@ -79,6 +83,15 @@ def view_tasks():
     display_tasks(task_list)
 
 
+def create_report():
+    """Function for creating a report"""
+
+    if not task_list:
+        display_message("The task list is empty.")
+        return
+    display_report(task_list, task_list_deleted)
+
+
 def run_task_manager():
     while True:
         display_message(
@@ -88,12 +101,13 @@ def run_task_manager():
       2 - View tasks
       3 - Remove a task
       4 - Mark a task as complete
-      5 - Exit
+      5 - Report
+      6 - Exit
     """
         )
         user_input = get_user_input("-> ")
-        if user_input not in ("1", "2", "3", "4", "5"):
-            display_message("Please enter a digit between 1 and 5.")
+        if user_input not in ("1", "2", "3", "4", "5", "6"):
+            display_message("Please enter a digit between 1 and 6.")
             continue
         if user_input == "1":
             add_task()
@@ -103,6 +117,8 @@ def run_task_manager():
             remove_task()
         elif user_input == "4":
             mark_task_complete()
+        elif user_input == "5":
+            create_report()
         else:
             display_message("Exit...")
             break
