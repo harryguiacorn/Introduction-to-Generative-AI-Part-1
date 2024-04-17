@@ -1,27 +1,29 @@
-# Instructions
+# Task Simple Task Manager
 
-## Libraries
+## Instructions
+
+### Libraries
 An external library is used in this assignment, so it's required to install it using pip beforehand.
 
 **Option 1**: pip install -r requirements.txt
 
 **Option 2**: python -m pip install -U prettytable
 
-## Entry Point
+### Entry Point
 App.py
 
-## Design Patterns
+### Design Patterns
 * Object-oriented programming (OOP)
 * Model–view–controller (MVC)
 
-## Functionality: 
+### Functionality: 
 1. Add a task
 2. View tasks
 3. Remove a task
 4. Mark a task as complete
 5. Exit
 
-## Screenshot
+### Screenshots
 ***
 ![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/c669500a-58e1-4fa8-b4c2-a312c0ff68d6)
 ***
@@ -33,7 +35,7 @@ App.py
 
 
 
-# Assignment
+## Assignment
 Task: Simple Task Manager - Python Coding (Deadline - 12.04.2024)
 
 Due 12 April 2024 23:59
