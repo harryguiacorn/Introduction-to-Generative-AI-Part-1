@@ -21,7 +21,8 @@ App.py
 2. View tasks
 3. Remove a task
 4. Mark a task as complete
-5. Exit
+5. Report
+6. Exit
 
 ### Screenshots
 ***
