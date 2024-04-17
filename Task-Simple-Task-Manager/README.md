@@ -22,7 +22,7 @@ App.py
 5. Exit
 
 ## Screenshot
-![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/01e6b9fc-4ac3-43cf-b3cf-5c74fb860f7b)
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/5fa23812-9906-45e5-a45e-de82088b72c8)
 
 # Assignment
 Task: Simple Task Manager - Python Coding (Deadline - 12.04.2024)
