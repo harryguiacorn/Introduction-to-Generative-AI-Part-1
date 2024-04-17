@@ -1,5 +1,11 @@
 from Model import Model_task
-from View import display_tasks, display_message, display_report, get_user_input
+from View import (
+    display_tasks,
+    display_message,
+    display_report,
+    get_user_input,
+    filter_incompleted_tasks,
+)
 import time
 import copy
 
@@ -10,23 +16,36 @@ task_list_deleted = []
 def add_task():
     """Function for adding a task"""
 
-    print("You have chosen to add a new task")
-    task_description = get_user_input("Please enter the task description: ")
+    display_message("You have chosen to add new tasks.\n")
 
-    # Use unit time as a unique task id
-    unix_time_now = int(time.time())
-    new_task = Model_task(unix_time_now, task_description)
+    task_input_number = get_user_input("Please enter the number of tasks: ")
+    if task_input_number.isdigit():
+        num = 0
+        while num < int(task_input_number):
 
-    task_list.append(new_task)
+            task_description = get_user_input(
+                f"\nPlease enter a description for task number {num}: "
+            )
 
-    display_message(f"New task: {task_description} is added")
-    display_tasks(task_list)
+            # Use unit time as a unique task id
+            unix_time_now = int(time.time())
+            new_task = Model_task(unix_time_now, task_description)
+
+            task_list.append(new_task)
+            num += 1
+            display_message(f"New task: {task_description} is added.")
+
+        display_tasks(task_list)
+    else:
+
+        display_message("WARNING: Please enter a valid digit.\n")
+        add_task()
 
 
 def remove_task():
     """Function for removing a task"""
 
-    print("You have chosen to remove a task.")
+    display_message("You have chosen to remove a task.")
 
     if not task_list:
         display_message("The task list is empty.")
@@ -58,18 +77,18 @@ def mark_task_complete():
         return
 
     print("You have chosen to mark a task complete.")
-
-    display_tasks(task_list)
+    list_incompleted_tasks = filter_incompleted_tasks(task_list)
+    display_tasks(list_incompleted_tasks)
     while True:
         task_number = get_user_input("Please select a task number to mark complete: ")
         if not task_number.isdigit():
-            display_message("Please enter a valid digit.")
+            display_message("WARNING: Please enter a valid digit.")
             continue
         task_number = int(task_number)
-        if task_number >= len(task_list):
-            display_message("Please enter a valid task number.")
+        if task_number >= len(list_incompleted_tasks):
+            display_message("WARNING: Please enter a valid task number.")
             continue
-        task_list[task_number].set_completed()
+        list_incompleted_tasks[task_number].set_completed()
         display_tasks(task_list)
         break
 
@@ -89,6 +108,9 @@ def create_report():
     if not task_list:
         display_message("The task list is empty.")
         return
+
+    display_message("You have chosen to create a report.\n")
+
     display_report(task_list, task_list_deleted)
 
 
@@ -107,7 +129,7 @@ def run_task_manager():
         )
         user_input = get_user_input("-> ")
         if user_input not in ("1", "2", "3", "4", "5", "6"):
-            display_message("Please enter a digit between 1 and 6.")
+            display_message("WARNING: Please enter a digit between 1 and 6.")
             continue
         if user_input == "1":
             add_task()
