@@ -23,6 +23,8 @@ App.py
 
 ## Screenshot
 ![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/c669500a-58e1-4fa8-b4c2-a312c0ff68d6)
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/93f99185-8447-4a63-ac6c-5244be758ad4)
+
 
 
 # Assignment
