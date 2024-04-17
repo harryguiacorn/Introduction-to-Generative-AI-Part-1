@@ -1,4 +1,4 @@
-# Task Simple Task Manager
+# Simple Task Manager
 
 ## Instructions
 
