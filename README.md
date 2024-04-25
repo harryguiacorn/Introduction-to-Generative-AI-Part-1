@@ -18,6 +18,13 @@ main.py
 
 ![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/bf291fd1-561e-40ec-8419-d97a0b52f035)
 
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/18195dbb-475d-4a76-afde-4dfa88658938)
+
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/37675b62-08f1-4bdb-aaa2-aa064cb8ba85)
+
+
+
+
 
 ## Terminal Version
 ### Entry Point
