@@ -1,5 +1,5 @@
-from Model import Model_task
-from View import (
+from model import Model_task
+from view import (
     display_tasks,
     display_message,
     display_report,

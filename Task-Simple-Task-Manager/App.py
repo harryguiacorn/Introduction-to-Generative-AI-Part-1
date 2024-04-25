@@ -1,9 +1,9 @@
-import Controller
+import controller
 
 
 class App:
     def __init__(self):
-        self.controller = Controller
+        self.controller = controller
 
     def run(self):
         self.controller.run_task_manager()
