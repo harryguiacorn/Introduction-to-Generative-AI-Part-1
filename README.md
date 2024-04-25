@@ -9,6 +9,15 @@ An external library is used in this assignment, so it's required to install it u
 
 **Option 2**: python -m pip install -U prettytable
 
+## Graphical User Interface (GUI)
+### Entry Point
+main.py
+
+### Screenshots
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/ed947818-2ad6-4233-b5bd-a8aa5de7749a)
+
+
+## Terminal Version
 ### Entry Point
 App.py
 
