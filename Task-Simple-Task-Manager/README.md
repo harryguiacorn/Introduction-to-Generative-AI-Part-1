@@ -9,6 +9,39 @@ An external library is used in this assignment, so it's required to install it u
 
 **Option 2**: python -m pip install -U prettytable
 
+## Graphical User Interface Version (GUI)
+### Entry Point
+main.py
+
+### Screenshots
+This simple task manager application allows users to enter task descriptions and statuses:
+***
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/ed947818-2ad6-4233-b5bd-a8aa5de7749a)
+
+To modify a task:
+***
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/bf291fd1-561e-40ec-8419-d97a0b52f035)
+
+To generate a task report:
+***
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/18195dbb-475d-4a76-afde-4dfa88658938)
+
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/37675b62-08f1-4bdb-aaa2-aa064cb8ba85)
+
+Warnings:
+***
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/95743f8e-466e-4a6d-8bc6-772567d065e3)
+
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/f3fb99bb-e48f-4cb6-b94c-85715d8120ba)
+
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/9fc99d57-7a1d-4de5-a8a5-1ed56075b2dc)
+
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/db808165-b508-4e9d-8466-b226a65d5fbf)
+
+
+
+
+## Terminal Version
 ### Entry Point
 App.py
 
