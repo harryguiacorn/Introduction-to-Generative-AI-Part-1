@@ -22,6 +22,9 @@ main.py
 
 ![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/37675b62-08f1-4bdb-aaa2-aa064cb8ba85)
 
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/95743f8e-466e-4a6d-8bc6-772567d065e3)
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/f3fb99bb-e48f-4cb6-b94c-85715d8120ba)
+![image](https://github.com/harryguiacorn/Introduction-to-Generative-AI-Part-1/assets/1398153/9fc99d57-7a1d-4de5-a8a5-1ed56075b2dc)
 
 
 
